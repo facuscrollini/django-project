@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to {{title}} APP</h1>
- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quos nemo et quasi mollitia hic sint itaque repellendus officiis est eum odit, deleniti dolorum obcaecati sunt omnis consequuntur id molestias.</p>
-</body>
-</html>
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Welcome to {{title}} APP</h1>
+<img src="{% static 'Guilmon.png' %}" alt="imagen de guilmon" width="70">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quos nemo et quasi mollitia hic sint itaque
+    repellendus officiis est eum odit, deleniti dolorum obcaecati sunt omnis consequuntur id molestias.</p>
+{% endblock %}
